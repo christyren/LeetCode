@@ -1,0 +1,12 @@
+## 217. Contains Duplicate
+
+#### [description](https://leetcode.com/problems/contains-duplicate/)
+
+```python
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        if len(nums) == 0 or len(nums) == 1:
+            return False
+        hashset = set(nums)
+        return len(hashset) != len(nums)
+```
